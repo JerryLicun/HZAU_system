@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>狮山活动之窗</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/setHomeSetFav.js"></script>
+<script type="text/javascript" src="js/myfocus-2.0.1.min.js" charset="utf-8"></script><!--引入myFocus库-->
+<script type="text/javascript">
+myFocus.set({
+    id:'boxID',//焦点图盒子ID
+    pattern:'mF_fancy',//风格应用的名称
+    time:3,//切换时间间隔(秒)
+    trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+    width:1000,//设置图片区域宽度(像素)
+    height:310,//设置图片区域高度(像素)
+    txtHeight:'default'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+});
+</script>
+</head>
+
+<body>
+<div class="top">
+  <div class="top_content">
+    <ul>
+      <li><a href="#">联系我们</a></li>
+      <li><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
+      <li><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a></li>
+    </ul>
+  </div>
+</div>
+<!--页面顶端top结束-->
+
+<div class="wrap">
+  <div  class="logo">
+    <div class="logo_left"><img src="images/logo1.jpg" /></div>
+    <div class="logo_right"><img src="images/tel.jpg" width="28" height="28" />开发人员服务热线：<span class="tel">123-456-7890</span></div>
+  </div>
+  <!--logo结束-->
+  
+  <div class="nav">
+    <div  class="nav_left"></div>
+    <div class="nav_mid">
+      <div class="nav_mid_left">
+        <ul>
+          <li><a href="#">首页</a></li>
+          <li><a href="狮山讲坛/狮山讲坛.html">狮山讲坛</a></li>
+            <li><a href="校园活动/校园活动.html">校园活动</a></li>
+                <li><a href="活动评价/活动评价.html">活动评价</a></li>
+                    <li><a href="我的日程/我的日程.html">我的日程</a></li>
+            <li><a href="http://jw.hzau.edu.cn/">登录</a></li>
+        </ul>
+      </div>
+      <!--nav_mid_left结束-->
+      <div class="nav_mid_right">
+        <form action="" method="post">
+          <input type="text" class="search_text" />
+          <!--<input type="text" class="search_text" x-webkit-speech />-->
+        </form>
+      </div>
+      <!--nav_mid_right结束--> 
+    </div>
+    <!--导航主体nav_mid结束-->
+    <div class="nav_right"></div>
+  </div>
+  <!--nav结束-->
+  
+  <div class="ad">
+    <div id="boxID"><!--焦点图盒子-->
+      <div class="loading"><img src="images/loading.gif" alt="请稍候..." /></div>
+      <!--载入画面(可删除)-->
+      <div class="pic"><!--内容列表(li数目可随意增减)-->
+        <ul>
+          <li><a href="#"><img src="images/da2.jpg" thumb="" alt="" text="详细描述2" /></a></li>
+          <li><a href="#"><img src="images/da3.jpg" thumb="" alt="" text="详细描述3" /></a></li>
+          <li><a href="#"><img src="images/da4.jpg" thumb="" alt="" text="详细描述4" /></a></li>
+          <li><a href="#"><img src="images/da3.jpg" thumb="" alt="" text="详细描述5" /></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--ad结束-->
+  
+  <div class="main">
+    <div class="news">
+      <div class="title">
+        <h2 class="titile_left">热门活动</h2>
+        <span class="title_right"><a href="#">More&gt;&gt;</a></span> </div>
+      <!--title结束-->
+      
+      <div class="pic_news"> <img src="images/news.jpg" alt="女神喊你来表白" width="113" height="77" />
+        <h2><a href="news.html">最近的一个活动</a></h2>
+        <p>活动时间：5月20日—5月25日<br />
+          
+          <a href="news.html">待评价>></a></p>
+      </div>
+      <!--pic_news结束-->
+      
+      <div class="news_list">
+        <ul>
+          <li><span>2018-03-09</span> <a href="校园活动/校园活动.html">活动A:狮子山讲坛XXX期</a></li>
+          <li><span>2018-04-01</span><a href="校园活动/校园活动.html">活动B：狮子山杯球类比赛</a></li>
+          <li><span>2014-05-30</span><a href="校园活动/校园活动.html">活动C:华中农业大学送毕业生晚会</a></li>
+          <li><span>2014-05-28</span><a href="校园活动/校园活动.html" title="aa">活动D:华中农业大学学科创新创业竞赛</a></li>
+        </ul>
+      </div>
+      <!--news_list结束--> 
+      
+    </div>
+    <!--news结束-->
+    
+    <div class="products">
+      <div class="title">
+        <h2 class="titile_left">分类中心</h2>
+        <span class="title_right"><a href="#">More&gt;&gt;</a></span> </div>
+      <!--title结束-->
+      
+      <div class="product_list"><img src="images/xiaoqing.jpg" alt="120年校庆" width="151" height="106" />
+        <h2><a href="http://120th.hzau.edu.cn">120年校庆</a></h2>
+        <p> 华中农业大学120周年校庆专题网站共有百廿征程、通知公告、校庆动态、学院风采、华农岁月、校庆标识六个栏目，旨在及时传递校庆工作信息，充分展示学校办学历史、办学特色、大学文化、发展成就、校友风采等。
+</p>
+      </div>
+      <!--product_list结束-->
+      
+      <div class="product_type">
+        <ul>
+          <li>狮子山讲坛</li>
+          <li>文体类</li>
+          <li>创新(竞赛)类</li>
+          <li>社团主办类</li>
+        </ul>
+      </div>
+    </div>
+    <!--products结束-->
+    
+    <div class="sidebar">
+      <div class="video">
+        <div class="title">
+          <h2 class="titile_left">精彩回放</h2>
+          <span class="title_right"><a href="#">More&gt;&gt;</a></span> </div>
+        <!--title结束-->
+        <p class="video_content">
+         <embed src='http://static.youku.com/v20170518.0/v/swf/upsplayer/loader.swf?VideoIDS=XMjg5ODAzMDExNg%3D%3D&embedid=NjEuMTgzLjExMi4yNDICNzI0NTA3NTI5AgI%3D&wd=&winType=BDskin&cna=2%252Fg5DgkOwzoCARsfErxHW5iO&partnerid=0edbfd2e4fc91b72&vext=pid%253D0edbfd2e4fc91b72%2526emb%253DNjEuMTgzLjExMi4yNDICNzI0NTA3NTI5AgI%253D%2526bc%253D%2526cna%253D2%252Fg5DgkOwzoCARsfErxHW5iO%2526vvlogext%253Dpc_i%25253D14462097712905Nr%252526pc_u%25253D-%252526rvpvid%25253D-%252526rycid%25253D-%252526yvft%25253D1522758851000%252526vsidc%25253D1%252526seid%25253D1522584985870y94%252526vstp%25253D29%252526svstp%25253D49%2526type%253D0%2526embsig%253D1_1522761168_e38ef709d96ad86df2dad162fce6e1ab' allowFullScreen='true' quality='high' width='220' height='140' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+        </p>
+      </div>
+      <!--video结束-->
+      
+      <div class="service"> <img src="images/app1.jpg" /> </div>
+    </div>
+    <!--sidebar结束--> 
+    
+  </div>
+  <!--main结束--> 
+</div>
+<!--最外层wrap结束  -->
+<div class="copyright">
+  <div class="copyright_content">
+    <ul>
+      <li>关于
+        <ul>
+          <li>品牌故事</li>
+          <li>联系我们</li>
+          <li>加入我们</li>
+          <li>版权声明</li>
+        </ul>
+      </li>
+      <li>分类
+        <ul>
+          <li>讲坛</li>
+          <li>文体</li>
+          <li>创新</li>
+          <li>社团</li>
+        </ul>
+      </li>
+      <li>关注
+        <ul>
+          <li>新浪微博</li>
+          <li>QQ空间</li>
+          <li>企业微信</li>
+          <li>QQ公众号</li>
+        </ul>
+      </li>
+      <li>留言
+        <ul>
+          <li>意见反馈</li>
+          <li>问题留言</li>
+          <li>媒体联络</li>
+          <li>在线客服</li>
+        </ul>
+      </li>
+      <li>QQ扫一扫
+        <ul>
+          <li><img src="images/rwm.jpg" alt="扫描关注微信" width="102" height="102" /></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!--copyright_content结束--> 
+</div>
+</body>
+</html>
