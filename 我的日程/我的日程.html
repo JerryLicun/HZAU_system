@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>作品</title>
+<link rel="stylesheet" type="text/css" href="css/css1.css" />
+<link rel="stylesheet" type="text/css" href="css/css2.css" />
+<script type="text/jscript" src="scripts/jquery-3.3.1.js"></script>
+<script type="text/jscript" src="scripts/js1.js"></script>
+<style>
+*{
+	padding:0px;
+	margin:0px;
+
+ }
+ a{text-decoration:none}
+  #field2 {
+	background-image:url("clock.png");
+	background-position:right center;
+	background-repeat:no-repeat;
+	border:1px solid #FFC030;
+	color:#3090C0;
+	
+	font-size: 18px;
+	cursor:pointer;
+}
+#qu4 {
+	float: left;
+	width: 500px;
+	position: absolute;
+	height: 150px;
+	left: 650px;
+	top: 550px;
+}
+
+
+#field3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+
+#qu1 #field1 {
+	font-size: 18px;
+	
+}
+#qu1 script {
+}
+ h2 {
+	text-align: center;
+}
+#qu1 .fl {
+}
+  #AnyTime--field2 {background-color:#EFEFEF;border:1px solid #CCC}
+  #AnyTime--field2 * {}
+  #AnyTime--field2 .AnyTime-btn {background-color:#F9F9FC;
+    border:1px solid #CCC;color:#3090C0}
+  #AnyTime--field2 .AnyTime-cur-btn {background-color:#FCF9F6;
+      border:1px solid #FFC030;color:#FFC030}
+  #AnyTime--field2 .AnyTime-focus-btn {border-style:dotted}
+  #AnyTime--field2 .AnyTime-lbl {color:black}
+  #AnyTime--field2 .AnyTime-hdr {background-color:#FFC030;color:white}
+  #qu1 .fl {
+	font-size: 18px;
+	font-weight: normal;
+	cursor: pointer;
+}
+#qu2 {
+	float: left;
+	height: 500px;
+	width: 40%;
+	
+	position: relative;
+	left: 0px;
+	top: 0px;
+	padding: 0px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+#qu1 #test {
+	font-size: 18px;
+}
+#qu3 {
+	float: left;
+	height: 400px;
+	width: 25%;
+	
+	left: 0px;
+	top: 0px;
+	position: relative;
+	margin-left: 0px;
+}
+#qu3 h3 {
+	text-align: center;
+}
+
+#qu2 input {
+	position: relative;
+	left: 0px;
+	top: 482px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;
+}
+a:link{
+	color: #000;
+}
+a:hover{
+	color:#0FF}
+#qu1 {
+	float: left;
+	width: 25%;
+	height: auto;
+	position: relative;
+	left: 0px;
+	
+}
+
+#qu1 #field1 {
+	cursor: pointer;
+}
+
+
+</style>
+
+
+
+</head>
+
+
+<body>
+<div class="top">
+  <div class="top_content">
+    <ul>
+      <li><a href="#">联系我们</a></li>
+      <li><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
+      <li><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="wrap">
+  <div  class="logo">
+    <div class="logo_left"><img src="images/logo1.jpg" /></div>
+    <div class="logo_right"><img src="images/tel.jpg" width="28" height="28" />开发人员服务热线：<span class="tel">123-456-7890</span></div>
+  </div>
+  <!--logo结束-->
+  
+  <div class="nav">
+    <div  class="nav_left"></div>
+    <div class="nav_mid">
+      <div class="nav_mid_left">
+        <ul >
+          <li><a href="../主页.html">首页</a></li>
+           <li><a href="../狮山讲坛/狮山讲坛.html">狮山讲坛</a></li>
+            <li><a href="../校园活动/校园活动.html">校园活动</a></li>
+                <li><a href="../活动评价/活动评价.html">活动评价</a></li>
+                    <li><a href="../我的日程/我的日程.html">我的日程</a></li>
+            <li><a href="http://jw.hzau.edu.cn/">登录</a></li>
+        </ul>
+      </div>
+      <!--nav_mid_left结束-->
+      <div class="nav_mid_right">
+        <form action="" method="post">
+          <input type="text" class="search_text" />
+          <!--<input type="text" class="search_text" x-webkit-speech />-->
+        </form>
+      </div>
+      <!--nav_mid_right结束--> 
+    </div>
+    <!--导航主体nav_mid结束-->
+    <div class="nav_right"></div>
+  </div>
+  <!--nav结束-->
+  
+  
+
+
+<div id="qu1" >
+
+
+<input type="text" id="field1" value="选择活动日期" size="20"  />
+<br/><br/>
+ <input type="text" id="field2" value="选择活动时间"size="20" />
+
+ <script type="text/javascript">
+  
+  AnyTime.picker( "field1",
+    { format: "%W, %M %D in the Year %z %E", firstDOW: 1 } );
+  $("#field2").AnyTime_picker(
+    { format: "%H:%i", labelTitle: "Hora",
+      labelHour: "Hora", labelMinute: "Minuto" } );
+  </script>
+  
+  <br /><br />
+  <input class="fl"type="text"value="活动分类" size="5" readonly="readonly" /><br /><br />
+ 
+  <ul id="test" >
+  <li id="lione" ><a href="#">体育</a></li>
+  <li id="litwo"><a href="#">文化</a></li>
+   <li id="lithree"><a href="#">招聘</a></li>
+    <li id="lifour"><a href="#">党团</a></li>
+     <li id="lifour"><a href="#">学习</a></li>
+      <li id="lifour"><a href="#">交流</a></li>
+       <li id="lifour"><a href="#">竞赛</a></li>
+        <li id="lifour"><a href="#">表演</a></li>
+  
+  </ul>
+
+  <script type="text/javascript">
+//JQ动态添加click事件 
+
+ 
+	
+	  
+  $("#lione").click(function(){
+	  if($("#qu2 p").is(":visible")){$("p").hide();}
+	   else{
+         $("#qu2").append('<p id="p11" >1.四月五日下午，体育馆进行乒乓球比赛；</p><p id="p12">2.四月八日上午，二运篮球场进行篮球比赛；</p><p id="p13">3.四月十五日上午，第二运动场进行足球比赛；</p><p id="p14">4.四月二十三日，体育馆进行羽毛球赛；</p><p id="p15">5.四月三十日下午，第一运动场进行体测；</p>')
+		
+		 }
+		 if($("#qu4 form").is(":visible")){$("#qu4 form").hide();}
+		 else 
+		  $("#qu4").append('<form id="fm1"><select id="slt1"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></seltct><input id="okk1" type="button" value="添加"></form>')
+		if($("#okk1")){$("#okk1").click(function(){
+			var $n=$("#slt1 option:selected").val() ;
+		if($("#qu3 #p11 ").length<=0){if($n==1){$("#p11").clone().appendTo("#qu3");}}
+		if($("#qu3 #p12 ").length<=0){if($n==2){$("#p12").clone().appendTo("#qu3");}}
+		if($("#qu3 #p13 ").length<=0){if($n==3){$("#p13").clone().appendTo("#qu3");}}
+		if($("#qu3 #p14 ").length<=0){if($n==4){$("#p14").clone().appendTo("#qu3");}}
+		if($("#qu3 #p15 ").length<=0){if($n==5){$("#p15").clone().appendTo("#qu3");}}
+			
+			
+			
+			})}
+		 
+	  })
+	  
+	  
+	 $("#litwo").click(function(){
+	  if($("#qu2 p").is(":visible")){$("p").hide();}
+	   else{
+         $("#qu2").append('<p id="p21" >1.四月五日下午，体育馆进行校园歌手比赛；</p><p id="p22">2.四月八日上午，二运篮球场进行表彰大会；</p><p id="p23">3.四月十五日上午，文化馆进行文化作品展览；</p><p id="p24">4.四月二十三日，大活剧场举行文艺晚会；</p><p id="p25">5.四月三十日下午，大活剧场放映电影《我的大学》；</p>')
+		
+		 }
+		 if($("#qu4 form").is(":visible")){$("#qu4 form").hide();}
+		 else 
+		  $("#qu4").append('<form ><select id="slt2"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></seltct><input id="okk2" type="button" value="添加"></form>')
+		if($("#okk1")){$("#okk2").click(function(){
+			var $n=$("#slt2 option:selected").val() ;
+		if($("#qu3 #p21 ").length<=0){if($n==1){$("#p21").clone().appendTo("#qu3");}}
+		if($("#qu3 #p22 ").length<=0){if($n==2){$("#p22").clone().appendTo("#qu3");}}
+		if($("#qu3 #p23 ").length<=0){if($n==3){$("#p23").clone().appendTo("#qu3");}}
+		if($("#qu3 #p24 ").length<=0){if($n==4){$("#p24").clone().appendTo("#qu3");}}
+		if($("#qu3 #p25 ").length<=0){if($n==5){$("#p25").clone().appendTo("#qu3");}}
+			
+			
+			
+			})}
+		 
+	  })
+	
+	
+   
+
+						
+  </script>
+ 
+</div>
+<div id="qu2">
+ <h2>活动内容</h2>
+
+
+ 
+</div>
+
+
+<div id="qu3">
+<h2>我的日程</h2>
+请选择活动并添加
+
+</div>
+<div id="qu4"><h3>选择活动</h3>
+<p id="p21" >
+
+</div>
+
+
+</body>
+</html>

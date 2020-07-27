@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<style>
+body{ margin:0; padding:0; font-size:30px; font-weight:bold}
+div{ text-align:center; line-height:50px}
+.head{ height:100px;background:#9CF}
+.left{ width:20%; height:600px; background:#ccc; float:left}
+.main{margin:0 20%;height:600px; background:#9CC }
+.right{ width:20%; height:600px;background:#FCC; float:right}
+.footer{ height:50px; background:#9F9; clear:both}
+*{margin:0; padding:0; font-size:14px;}
+a{color:#333;text-decoration:none}
+.nav{list-style:none; height:30px; position:relative; border-bottom:10px solid #F60; margin-top:20px;}
+.nav li{float:left; width:80px}
+.nav li a{display:block; height:30px;text-align:center; line-height:30px; background:#efefef; margin-left:1px;}
+.nav li a.on, .nav li a:hover{background:#F60;color:#fff; 
+</style>
+<script type="text/javascript" src="../页面布局结构/js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="../页面布局结构/js/jquery.kwicks-1.5.1.pack.js"></script>
+<script type="text/javascript" src="../页面布局结构/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('.nav').kwicks({
+	max :120,
+	isVertical: false,
+	sticky: false,
+	defaultKwick: 0,
+	event: 'mouseover',
+	spacing: 0,
+	duration: 500
+	});
+});
+
+
+</script>
+</head>
+
+<body>
+<div class="head">狮山活动之窗（首页）
+<ul class="nav">
+    <li><a class="on" href="#">首　　页</a></li>
+    <li><a href="#">校园活动</a></li>
+    <li><a href="#">我的日程</a></li>
+    <li><a href="#">历史活动</a></li>
+  
+    <li><a href="#">邀请交友</a></li>
+    <li><a href="#">狮山讲座</a></li>
+	<li><a href="http://jw.hzau.edu.cn/">登录</a></li>
+  </ul>
+</div>
+<div class="left">left</div>
+<div class="right">right</div>
+<div class="main">main</div>
+<div class="footer">footer</div>
+</body>
+</html>
